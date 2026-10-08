@@ -1,0 +1,44 @@
+{
+  "name": "indian-equity-analyzer-",
+  "version": "1.0.0",
+  "description": "This is ongoing development repo where user on the run time locally can analyze Indian Equity maket with grounded reasearch for their stock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite dev",
+    "build": "vite build",
+    "deploy": "vite build && wrangler deploy",
+    "types": "wrangler types env.d.ts --include-runtime false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhutshr/Indian-Equity-Analyzer-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/bhutshr/Indian-Equity-Analyzer-/issues"
+  },
+  "homepage": "https://github.com/bhutshr/Indian-Equity-Analyzer-#readme",
+  "dependencies": {
+    "agents": "^0.27.0",
+    "ai": "^7.0.133",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "workers-ai-provider": "^4.0.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.63.0",
+    "@cloudflare/workers-types": "^5.20261008.1",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "wrangler": "^4.25.0"
+  }
+}
