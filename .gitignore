@@ -238,3 +238,9 @@ __pycache__
 docker-images.yml
 build_output.json
 /astra-2-0/requests/
+
+.wrangler/
+.dev.vars
+.dev.vars.*
+dist/
+.vite/

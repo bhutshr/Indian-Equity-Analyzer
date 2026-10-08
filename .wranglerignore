@@ -1,0 +1,44 @@
+# Tests, evals, docs, plans, skills, requests — never bundled
+tests/
+evals/
+docs/
+plans/
+requests/
+skills/
+*.test.ts
+*.test.js
+vitest.config.ts
+
+# Documentation files (allow only root README.md)
+*.md
+!README.md
+
+# Coverage
+coverage/
+
+# Local secrets (never bundled or committed)
+.dev.vars
+.dev.vars.*
+*-secrets.json
+.opencode/
+
+# IDE / tooling
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Node modules (already excluded by default; explicit for clarity)
+node_modules/
+
+# Build / wrangler artifacts
+.wrangler/
+dist/
+
+# Misc
+.DS_Store
+*.log

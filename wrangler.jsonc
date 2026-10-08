@@ -1,6 +1,7 @@
 {
     "$schema": "node_modules/wrangler/config-schema.json",
     "name": "indian-equity-analyzer",
+    "account_id": "e6f3d2cdc89ae5b34ca7a1032f8ee184",
     "main": "./src/server/index.ts",
 
     "compatibility_date": "2026-10-08",
