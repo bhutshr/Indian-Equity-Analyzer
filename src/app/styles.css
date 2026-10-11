@@ -1,0 +1,71 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b0e14;
+  color: #e6e9ef;
+  font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+.app { display: flex; flex-direction: column; height: 100vh; max-width: 900px; margin: 0 auto; }
+
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 20px; border-bottom: 1px solid #1e2430;
+}
+header h1 { margin: 0; font-size: 17px; }
+.sub { color: #7d8698; font-size: 12px; }
+.mcp { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: #9aa4b6;
+  background: #141a24; border: 1px solid #1e2430;
+  padding: 4px 10px; border-radius: 99px;
+}
+.pill i { width: 6px; height: 6px; border-radius: 99px; background: #f0b429; }
+.pill.ready i { background: #38d39f; }
+.pill.failed i { background: #ef5350; }
+
+main { flex: 1; overflow-y: auto; padding: 20px; }
+
+.empty { color: #7d8698; text-align: center; margin-top: 60px; }
+.samples { display: flex; flex-direction: column; gap: 8px; align-items: center; margin-top: 16px; }
+.samples button {
+  background: #141a24; color: #c7cedb; border: 1px solid #1e2430;
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px;
+}
+.samples button:hover { border-color: #2f3a4d; }
+
+.msg { display: flex; margin-bottom: 14px; }
+.msg.user { justify-content: flex-end; }
+.bubble {
+  max-width: 85%; padding: 10px 14px; border-radius: 12px;
+  background: #141a24; border: 1px solid #1e2430; overflow-x: auto;
+}
+.msg.user .bubble { background: #1d4ed8; border-color: #1d4ed8; color: #fff; }
+.bubble table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.bubble th, .bubble td { border: 1px solid #243041; padding: 5px 9px; text-align: left; }
+.bubble th { background: #10161f; }
+.bubble p:first-child { margin-top: 0; }
+.bubble p:last-child { margin-bottom: 0; }
+
+.timeline { margin: 6px 0 16px; padding-left: 4px; }
+.step { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #9aa4b6; padding: 3px 0; }
+.step .dot { width: 7px; height: 7px; border-radius: 99px; background: #f0b429; }
+.step.done .dot { background: #38d39f; }
+.step.error .dot { background: #ef5350; }
+.step code { color: #c7cedb; }
+.step small { color: #6b7488; }
+.step small.err { color: #ef5350; }
+
+.thinking { color: #7d8698; font-size: 13px; }
+
+footer { display: flex; gap: 8px; padding: 14px 20px; border-top: 1px solid #1e2430; }
+footer input {
+  flex: 1; background: #141a24; border: 1px solid #1e2430; color: #e6e9ef;
+  padding: 11px 14px; border-radius: 10px; font-size: 14px; outline: none;
+}
+footer input:focus { border-color: #2f3a4d; }
+footer button {
+  background: #1d4ed8; color: #fff; border: 0;
+  padding: 0 20px; border-radius: 10px; cursor: pointer; font-weight: 600;
+}
+footer button:disabled { opacity: .5; cursor: not-allowed; }
